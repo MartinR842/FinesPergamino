@@ -64,15 +64,15 @@ body.tema-claro{
   align-items:center ;  
   background-color: #ff48bf;
   border-radius: 1.8rem;
-  margin-inline: 1rem;
-  padding-inline: 1rem;
+  margin-inline: 3rem;
+  padding-inline: 0.5rem;
 }
 
 .menuInicio li a {
   display: block;
-  padding: 10px;
+  padding: 0.5rem;
   text-decoration: none;
-  font-size:large;
+  font-size:medium;
   font-weight: bolder;
   color: #10086b;
 
@@ -136,7 +136,7 @@ body.tema-claro{
 /************* Main *************/
     .section-title {
         text-align: center;
-        margin-block: 3rem;
+        margin-block: 0.5rem;
         position: relative;
     }
     .section-title h2 {
@@ -156,10 +156,10 @@ body.tema-claro{
     }
     .razones-container {
         display: flex;
-        flex-wrap: wrap;
+        
         justify-content: space-evenly;
-        gap: 30px;
-        margin-block: 5rem;
+        gap: 1rem;
+        margin-block: 2rem;
     }
     .escuela{
       width: 330px;
@@ -175,6 +175,7 @@ body.tema-claro{
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
+        margin: 1rem;
     }
     .razon-card:hover {
         transform: translateY(-10px);
@@ -219,18 +220,18 @@ body.tema-claro{
     
 /************** beneficios *****************/
 .row{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columnas de igual tamaño */
   padding: 2rem;
 }
 
 .beneficio-item {
-  display: flex;
+  flex: 1 1 30%;
   align-items: center;
   margin: 3rem;
   background: #d4fcf6;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2rem;  
   box-shadow: 8px 6px 0px 0px #1b0bcade;
   transition: transform 0.3s ease;
 }
@@ -255,7 +256,7 @@ body.tema-claro{
   height: auto; 
   padding: 1rem 0rem 1rem 15%; 
   background: linear-gradient(to right,#cd086a 5%,#550265 35%,#02cff7 100%);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   
   
 }

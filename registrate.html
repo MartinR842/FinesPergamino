@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="CSS/Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
 
 </head>
 <body class="tema-claro">
@@ -17,7 +19,7 @@
             </div>
             <ul class="menuInicio">
                 <li>
-                    <a href="index.html"><i class="bi bi-house-check fs-1"></i>Home</a>
+                    <a href="index.html"><i class="bi bi-house-check fs-3"></i>Home</a>
         
                 </li>
             </ul>
@@ -31,49 +33,50 @@
         </nav>
     </header>
     <section class="formulario">
-        <form action="datos.html" method="post">
-            <fieldset class="marco-form">
-                <legend>Formulario de Inscripción</legend>
+      <form id="miFormulario" action="datos.html" method="post">
+        <fieldset class="marco-form">
+          <legend>Formulario de Inscripción</legend>
 
-                <div class="nombre">
-                  <input id="nombre" type="text" placeholder="Nombre">
-                </div>
-            
-                <div class="apellido">
-                  <input id="apellido" type="text" placeholder="Apellido" required>
-                </div>
-            
-                <div class="dni">
-                  <input id="dni" type="number" placeholder="DNI">
-                </div>
-            
-                <div class="mail">
-                  <input id="mail" type="email" placeholder="Correo electrónico">
-                </div>
-            
-                <div class="password">
-                  <input id="pass" type="password" placeholder="Contraseña">
-                </div>
-            
-                <div class="date">
-                  <label for="date">Fecha de nacimiento</label>
-                  <input type="date" id="date" placeholder="Fecha de nacimiento">
-                </div>
-            
-                <div class="archivo">
-                  <input type="file" id="archivo">
-                </div>
-            
-                <div class="textarea">
-                  <textarea id="comentarios" rows="5" cols="20" placeholder="Dejanos tu comentario..."></textarea>
-                </div>
-            
-                <div class="botones-form">
-                  <input type="submit" value="Enviar">
-                  <input type="reset" value="Restablecer">
-                </div>
-            </fieldset>
-        </form>
+          <div class="nombre">
+            <input id="nombre" type="text" placeholder="Nombre">
+          </div>
+
+          <div class="apellido">
+            <input id="apellido" type="text" placeholder="Apellido" required>
+          </div>
+
+          <div class="dni">
+            <input id="dni" type="number" placeholder="DNI">
+          </div>
+
+          <div class="mail">
+            <input id="mail" type="email" placeholder="Correo electrónico">
+          </div>
+
+          <div class="password">
+            <input id="pass" type="password" placeholder="Contraseña">
+          </div>
+
+          <div class="date">
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" id="date">
+          </div>
+
+          <div class="archivo">
+            <input type="file" id="archivo">
+          </div>
+
+          <div class="textarea">
+            <textarea id="comentarios" rows="5" cols="20" placeholder="Dejanos tu comentario..."></textarea>
+          </div>
+
+          <div class="botones-form">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+          </div>
+      </fieldset>
+    </form>
+
     </section>
 
 
@@ -84,9 +87,9 @@
                 <a href="index.html"><i class="bi bi-house-check fs-1"></i>Home</a>
             </li>
             <li>
-              <a href="#"><i class="bi bi-facebook fs-1"></i>Facebook</a></li>
+              <a href="#"><i class="bi bi-facebook fs-3"></i>Facebook</a></li>
             <li>          
-              <a href="#"><i class="bi bi-instagram fs-1"></i>Instagram</a>
+              <a href="#"><i class="bi bi-instagram fs3"></i>Instagram</a>
             </li>
           </ul>
         </nav> 
