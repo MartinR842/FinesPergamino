@@ -366,3 +366,18 @@ textarea {
   font-weight: bold;
   cursor: pointer;
 }
+
+.enviar,
+.restablecer{
+  background-color: #0b5ed7;
+  border-radius: 0.5rem;
+}
+.enviar:hover{
+  background-color: #7da8ea;
+  border-radius: 0.5rem;
+}
+.restablecer:hover{
+  background-color: #7da8ea;
+  border-radius: 0.5rem;
+}
+

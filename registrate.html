@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="CSS/Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"/>
+    
 
 </head>
 <body class="tema-claro">
@@ -34,6 +34,7 @@
     </header>
     <section class="formulario">
       <form id="miFormulario" action="datos.html" method="post">
+        
         <fieldset class="marco-form">
           <legend>Formulario de Inscripción</legend>
 
@@ -71,8 +72,8 @@
           </div>
 
           <div class="botones-form">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Restablecer">
+            <button id="btnEnviar" class="enviar" type="submit">Enviar</button>
+            <button id="btnRestablecer" class="restablecer" type="reset">Restablecer</button>
           </div>
       </fieldset>
     </form>
@@ -95,9 +96,11 @@
         </nav> 
   
     </footer> 
-    <script src="./JAVA/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+    <script src="./JAVA/rejeistrate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      
 </body>
 </html>
