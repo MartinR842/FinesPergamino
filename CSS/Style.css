@@ -423,7 +423,7 @@ textarea {
 
   /* beneficios */
   .row {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
@@ -433,7 +433,21 @@ textarea {
   .contenedorInicio {
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(to right,#ef1d86 20%,#550265 55%,#02cff7 100%);
   }
+
+  .logo{
+
+    width: 15rem;
+    margin: 1rem auto;
+    display: block;
+  }
+    .logoProvincia {
+    width: 7rem;         
+    height: auto;
+    margin: 1rem auto;    
+    display: block;
+   }
 
   .menuInicio {
     flex-direction: column;
@@ -452,7 +466,7 @@ textarea {
 
   /* carrusel */
   .contenedorCarousel {
-    height: 15rem; /* más bajo en celulares */
+    height: 15rem; 
   }
   .carousel-caption h1 {
     font-size: 2rem;
