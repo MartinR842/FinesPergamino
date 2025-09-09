@@ -381,3 +381,114 @@ textarea {
   border-radius: 0.5rem;
 }
 
+/* ======== Responsive ======== */
+
+/* Tablets  */
+@media (max-width: 900px) {
+  /* menú */
+  .contenedorInicio {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .menuInicio {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menuInicio li {
+    margin: 0.5rem;
+    max-width: 12rem;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+
+  .logoProvincia {
+    height: 3rem;
+    width: 6rem;
+  }
+
+  /* razones */
+  .razones-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .razon-card {
+    width: 90%;
+  }
+
+  /* beneficios */
+  .row {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  /* menú */
+  .contenedorInicio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuInicio {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .menuInicio li {
+    width: 100%;
+    max-width: 15rem;
+    justify-content: center;
+  }
+
+  .cambiarFondo {
+    margin: 1rem auto;
+  }
+
+  /* carrusel */
+  .contenedorCarousel {
+    height: 15rem; /* más bajo en celulares */
+  }
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption h4 {
+    font-size: 1rem;
+  }
+
+  /* razones */
+  .razones-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .razon-card {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  /* beneficios */
+  .row {
+    grid-template-columns: 1fr; /* 1 columna en celular */
+    padding: 1rem;
+  }
+
+  .beneficio-item {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  /* footer */
+  .menuFooter {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menuFooter li {
+    justify-content: center;
+  }
+}
