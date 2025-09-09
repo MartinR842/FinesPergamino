@@ -428,7 +428,7 @@ textarea {
 }
 
 /* Celulares */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   /* menú */
   .contenedorInicio {
     flex-direction: column;
@@ -438,7 +438,7 @@ textarea {
 
   .logo{
 
-    width: 15rem;
+    width: 13rem;
     margin: 1rem auto;
     display: block;
   }
@@ -482,22 +482,32 @@ textarea {
   }
 
   .razon-card {
-    width: 95%;
+    width: 70%;
     padding: 1rem;
   }
 
   /* beneficios */
   .row {
-    grid-template-columns: 1fr; /* 1 columna en celular */
+    flex-direction: column;
+    gap: 1rem;
     padding: 1rem;
+
+  }
+  .section-title{
+    margin-block: 3rem;
   }
 
   .beneficio-item {
-    margin: 1rem 0;
+    margin: 1rem auto;
     padding: 1rem;
+    width: 70%;
   }
 
   /* footer */
+  .contenedorFooter{
+    background: linear-gradient(to right,#ef1d86 20%,#550265 55%,#02cff7 100%);
+    padding: 0;
+  }
   .menuFooter {
     flex-direction: column;
     text-align: center;
