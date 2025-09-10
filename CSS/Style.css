@@ -441,7 +441,7 @@ textarea {
   .contenedorInicio {
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to right,#ef1d86 20%,#550265 55%,#02cff7 100%);
+    background: linear-gradient(to right,#ef1d86 5%,#550265 65%,#02cff7 100%);
   }
 
   .logo{
@@ -513,7 +513,7 @@ textarea {
 
   /*** footer ***/
   .contenedorFooter{
-    background: linear-gradient(to right,#ef1d86 20%,#550265 55%,#02cff7 100%);
+    background: linear-gradient(to right,#ef1d86 5%,#550265 65%,#02cff7 100%);
     padding: 0;
   }
   .menuFooter {
