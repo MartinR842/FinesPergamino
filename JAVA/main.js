@@ -1,6 +1,6 @@
 const cambiarFondo = document.getElementById('cambiarFondo');
 const body = document.body;
-const titulo = document.querySelectorAll('h2');
+const titulo = document.querySelectorAll('h1');
 
 cambiarFondo.addEventListener('click', cambiarModoColor);
 
@@ -12,6 +12,7 @@ function cambiarModoColor(){
         cambiarFondo.style.backgroundColor = '#c807a8ff';
         titulo.forEach(titulo => {
         titulo.style.color = '#0ecef9ff';
+        
         });
                 
     } else {

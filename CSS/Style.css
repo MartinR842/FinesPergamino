@@ -38,13 +38,14 @@ body.tema-claro{
   display: flex;
   justify-content:left;
   align-items: center;
-  color: white;
-  
+}
+.logo-container h2{
+  color: white; 
 }
 
 .logo {
-  height: 4rem;
-  width: auto;
+  height: auto;
+  width: 12rem;
 }
 .logoProvincia{
   height: 4.5rem;
@@ -435,7 +436,10 @@ textarea {
   }
 }
 
+
+
 /*** Celulares ***/
+
 @media (max-width: 600px) {
   /*** menú ***/
   .contenedorInicio {
@@ -445,8 +449,6 @@ textarea {
   }
 
   .logo{
-
-    width: 13rem;
     margin: 1rem auto;
     display: block;
   }
