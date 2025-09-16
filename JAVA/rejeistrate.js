@@ -1,6 +1,6 @@
 const btnEnviar=document.getElementById('btnEnviar');
 
-btnEnviar.addEventListener('submit',function(event){
+miFormulario.addEventListener('submit',function(event){
   event.preventDefault();
 
   const nombre = document.getElementById('nombre').value.trim();
@@ -11,98 +11,73 @@ btnEnviar.addEventListener('submit',function(event){
   if (nombre===''){
       iziToast.error({
       title: 'Error',
-      message: 'Complete todos los campos',
+      message: 'Completar el Nombre es obligatorio',
       position:'topCenter',
-      timeout:3000,
+      timeout:5000,
       progressBarColor: 'rgba(19, 182, 136, 1)',
       TransitionIn:'fadeInDown',
       });
       return;
     
-  }else{
-      iziToast.success({
-      title: 'OK',
-      message: 'Los datos han sido enviados correctamente!',
-      position:'topCenter',
-      timeout:3000,
-      progressBarColor: 'rgba(19, 182, 136, 1)',
-      TransitionIn:'fadeInDown',
-      });
-
   }
   
 
   if (apellido===''){
       iziToast.error({
       title: 'Error',
-      message: 'Complete todos los campos',
+      message: 'Completar el Apellido es obligatorio',
       position:'topCenter',
-      timeout:3000,
+      timeout:5000,
       progressBarColor: 'rgba(19, 182, 136, 1)',
       TransitionIn:'fadeInDown',
       });
     
-  }else{
-      iziToast.success({
-      title: 'OK',
-      message: 'Los datos han sido enviados correctamente!',
-      position:'topCenter',
-      timeout:3000,
-      progressBarColor: 'rgba(19, 182, 136, 1)',
-      TransitionIn:'fadeInDown',
-      });
-
   }
   
-  if (dni.length=== 8){
-    iziToast.success({
-      title: 'OK',
-      message: 'Los datos han sido enviados correctamente!',
-      position:'topCenter',
-      timeout:3000,
-      progressBarColor: 'rgba(19, 182, 136, 1)',
-      TransitionIn:'fadeInDown',
-      });
-      
-    
-  }else{
-      
+  if (dni.length!= 8){
       iziToast.error({
       title: 'Error',
-      message: 'Complete todos los campos',
+      message: 'D.N.I es incorrecto o no fue ingresado',
       position:'topCenter',
-      timeout:3000,
+      timeout:5000,
       progressBarColor: 'rgba(19, 182, 136, 1)',
       TransitionIn:'fadeInDown',
-      });
-
-  }
-
-  if (mail.includes('@')){
-    iziToast.success({
-      title: 'OK',
-      message: 'Los datos han sido enviados correctamente!',
-      position:'topCenter',
-      timeout:3000,
-      progressBarColor: 'rgba(19, 182, 136, 1)',
-      TransitionIn:'fadeInDown',
-      });
-      
+      });     
     
-  }else{
-      
-      iziToast.error({
-      title: 'Error',
-      message: 'Complete todos los campos',
-      position:'topCenter',
-      timeout:3000,
-      progressBarColor: 'rgba(19, 182, 136, 1)',
-      TransitionIn:'fadeInDown',
-      });
-
   }
+
   
-  });
+  /*Validar Mail*/
+    const mailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!mail){
+            iziToast.error({
+            title: 'Error',
+            message: 'El mail es obligatorio',
+            position:'topCenter',
+            timeout:5000,
+            progressBarColor: 'rgba(19, 182, 136, 1)',
+            TransitionIn:'fadeInDown',
+            });
+    }else if(!mailRegex.test(mail)){
+            iziToast.error({
+            title: 'Error',
+            message: 'El mail está incorrecto',
+            position:'topCenter',
+            timeout:5000,
+            progressBarColor: 'rgba(19, 182, 136, 1)',
+            TransitionIn:'fadeInDown',
+            });
+      };
+
+Swal.fire({
+title: "Buen Trabajo!",
+text: "Sus datos fueron enviados!",
+icon: "success"
+});
+miformulario.reset();
+});
+
+    
 
 
 
